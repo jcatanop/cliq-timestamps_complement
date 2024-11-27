@@ -7,7 +7,7 @@ This plugin has been tested on Firefox, Edge and Chrome browsers.
 Downlowad this repo and then...
 
 ### Firefox
-In Firefox: Open the [about:debugging page](about:debugging#/runtime/this-firefox), click the `Load Temporary Add-on` button, then select any file in downloaded directory.
+In Firefox: Open the <a href="about:debugging#/runtime/this-firefox">about:debugging page</a>, click the `Load Temporary Add-on` button, then select any file in downloaded directory.
 
 The extension now installs, and remains installed until you restart Firefox.
 
