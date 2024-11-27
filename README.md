@@ -18,6 +18,11 @@ In Chrome: Open the [extensions](chrome://extensions/), activate `developer mode
 
 The extension now installs.
 
+### Edge
+In Edge: Open the [extensions](edge://extensions/), click the activate `Load unpacked` button, then select any file in downloaded directory.
+
+The extension now installs.
+
 ## Use it
 Go to [Cliq](https://cliq.zoho.com/), login if needed and then a cvs file will be downloaded automatically.
 
