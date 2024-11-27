@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "cliq-timestamps_complement",
+  "version": "1.0",
+  "description": "A small browser extension that helps you create CSV files with check-in and check-out times.",
+  "icons": {
+    "48": "icons/appox-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.cliq.zoho.com/company/*"],
+      "js": ["cliqlist.js"]
+    }
+  ]
+}
+
