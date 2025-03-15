@@ -1,12 +1,12 @@
-var today = Math.floor(+new Date() );
+var today = Math.floor(+new Date());
 
 function dateConverter(UNIX_timestamp) {
-    var a = new Date(UNIX_timestamp);
-    var year = a.getFullYear();
-    var month = a.getMonth() + 1;
-    var day = a.getDate();
-    var time = year + '-' + month + '-' + day;
-    return time;
+  var a = new Date(UNIX_timestamp);
+  var year = a.getFullYear();
+  var month = a.getMonth() + 1;
+  var day = a.getDate();
+  var time = year + '-' + month + '-' + day;
+  return time;
 }
 
 var dateStart = dateConverter(today - (86400000 * 7));
@@ -85,9 +85,9 @@ async function getTimestamps(uid, name) {
   });
 
   const timestamps = await response.json();
- 
+
   for (let e in timestamps.data) {
- 
+
     for (let u in timestamps.data[e].entries) {
       checkin = timeConverter(timestamps.data[e].entries[u].checkin_time);
       checkout = timeConverter(timestamps.data[e].entries[u].checkout_time);
