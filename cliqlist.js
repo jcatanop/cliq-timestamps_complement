@@ -1,5 +1,16 @@
-dateStart = "2024-11-01";
-dateEnd = "2024-11-27";
+var today = Math.floor(+new Date() );
+
+function dateConverter(UNIX_timestamp) {
+    var a = new Date(UNIX_timestamp);
+    var year = a.getFullYear();
+    var month = a.getMonth() + 1;
+    var day = a.getDate();
+    var time = year + '-' + month + '-' + day;
+    return time;
+}
+
+var dateStart = dateConverter(today - (86400000 * 7));
+var dateEnd = dateConverter(today - 86400000);
 
 var Text = "UID,NAME,DATE,CHECKIN,CHECKOUT,INTERVAL \n";
 var sts = 0;
